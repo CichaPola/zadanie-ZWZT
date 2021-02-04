@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('./home.css');
+@import url('./logged.css');
+@import url('./notFound.css');
+
+html, body {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
