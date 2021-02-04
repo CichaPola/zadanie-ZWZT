@@ -1,6 +1,7 @@
 import { route } from './router';
 import home from './templates/home.js';
 import logged from './templates/logged.js';
+import notFound from './templates/notFound.js';
 
 
 route('/', 'home', function() {
