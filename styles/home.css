@@ -29,14 +29,18 @@ button, input {
     background-color: #73636e;
     color: #f2e7ed;
 }
+input:placeholder-shown {
+    color: #948e90;
+}
 input {
     background-color: #fcf6f8;
-    color: #948e90;
+    color: #000000;
     padding-left: 10px;
     border: 1px solid #948e90;
     height: 40px;
     width: 150px;
 }
+
 #signIn, button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;

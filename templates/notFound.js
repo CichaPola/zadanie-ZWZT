@@ -1,5 +1,4 @@
 const notFound = () => {  
-    const head = document.querySelector("head");
     const script = document.createElement("script");
     script.setAttribute("type", "text/html");
     script.setAttribute("id", "404");
@@ -14,6 +13,7 @@ const notFound = () => {
             <p id="errorMessage">Page not found</p>
         </div>
     </div>`;
+    const head = document.getElementsByTagName("head")[0];
     head.appendChild(script);
 };
 export default notFound();

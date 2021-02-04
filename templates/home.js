@@ -1,5 +1,4 @@
 const home = () => {  
-    const head = document.querySelector("head");
     const script = document.createElement("script");
     script.setAttribute("type", "text/html");
     script.setAttribute("id", "home");
@@ -15,6 +14,7 @@ const home = () => {
                 <button class="submit">SUBMIT</button>
             </div>
         <div>`;
+    const head = document.getElementsByTagName("head")[0];
     head.appendChild(script);
 };
 export default home();

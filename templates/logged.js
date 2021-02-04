@@ -1,5 +1,4 @@
 const logged = () => {  
-    const head = document.querySelector("head");
     const script = document.createElement("script");
     script.setAttribute("type", "text/html");
     script.setAttribute("id", "success");
@@ -14,6 +13,7 @@ const logged = () => {
             <p>You have successfully signed into your account.</p>
         </div>
     </div>`;
+    const head = document.getElementsByTagName("head")[0];
     head.appendChild(script);
 };
 export default logged();
