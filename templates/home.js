@@ -3,8 +3,7 @@ const home = () => {
     script.setAttribute("type", "text/html");
     script.setAttribute("id", "home");
     script.innerHTML= 
-        `
-        <div id="main">
+        `<div id="main">
             <p id="signIn">SIGN IN</p>
             <div id="form">
                 <input id="username" type="text" placeholder="username"/><br>
