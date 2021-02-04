@@ -2,6 +2,7 @@ import { route } from './router';
 import home from './templates/home.js';
 import logged from './templates/logged.js';
 
+
 route('/', 'home', function() {
   this.$on('.submit', 'click', () => {
 
