@@ -1,5 +1,6 @@
 import { route } from './router';
 import home from './templates/home.js';
+import logged from './templates/logged.js';
 
 route('/', 'home', function() {
   this.$on('.submit', 'click', () => {
@@ -25,7 +26,7 @@ route('/', 'home', function() {
         }
       }
       else {
-        window.location.href='#/ex1';
+        window.location.href='#/success';
       }
     }, (error) => {
       document.getElementById('errorMsg2').innerText="invalid password";
@@ -33,17 +34,5 @@ route('/', 'home', function() {
   });
 });
 
-route('/ex1', 'example1', function() {
-  this.title = 'Example 1';
-});
-
-route('/ex2', 'example2', function() {
-  this.title = 'Example 2';
-  this.counter = 0;
-  this.$on('.my-button', 'click', () => {
-    this.counter += 1;
-    this.$refresh();
-  });
-});
-
+route('/success', 'success', function() {});
 route('*', '404', function () {});
