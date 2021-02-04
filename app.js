@@ -1,4 +1,5 @@
 import { route } from './router';
+import home from './templates/home.js';
 
 route('/', 'home', function() {
   this.$on('.submit', 'click', () => {
